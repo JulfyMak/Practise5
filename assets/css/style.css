@@ -1,0 +1,148 @@
+p{
+	margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 0.5em; 
+}
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+h4 {
+	font-size: 17px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+h5 {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+h6 {
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-family: 'opensans-bold';
+	color: #000;
+}
+.text {
+	font-size: 36px;
+	line-height: 40px;
+	margin-top: 20px;
+	font-family: 'arial';
+	font-weight: bold;
+	color: #000;
+}
+
+.frame {
+	background-color: #dfd08d;
+	border:3px #006400 ridge;
+	width: 800px; 
+	height: 100px; 
+	padding: 5px 0 5px 15px; 
+	margin:20px 0 0 20px;
+}
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 50px 7px 7px; /* Отступы вокруг картинки */
+}
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+.forItalic {
+	margin-top: 3em; /* Отступ сверху */
+	margin-bottom: 1em; /* Отступ снизу */
+	font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+    font-style: italic; /* Курсивное начертание */
+	font-weight: normal;
+	color:  #074407;
+}
+.green-bold-list {
+    list-style-type: square; /* Маркеры в виде квадрата */
+    list-style-position: outside; /* Маркеры размещаются за пределами текстового блока */
+	color:  #074407; /* Цвет текста списка */
+	margin-top: 2em;
+}
+.layer1 {
+    background:#074407; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    margin-bottom: -7px; /* Отступ снизу */
+   }
+   
+   .layer2 {
+    margin-left: 40px; /* Отступ слева */
+    background: #dfd08d;/* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+   }
+   .logo:hover {opacity: 0.8;}
+
+   button:focus{outline: none}
+.wrapper{
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+   .btn{
+	   z-index: 999;
+	   position: absolute;
+	   top: calc(50% - (50px/2));
+	   margin: 10px;
+	   border: none;
+   }
+   .material-icons{
+	   margin-top: 3px;
+	   font-size: 36px;
+   }
+   .btn-prev .material-icons{margin-left: -3px;}
+.btn-next .material-icons{margin-right: -3px;}
+   
+.btn-next{right: 0;}
+   
+.dot{
+	   width: 20px;
+	   height: 20px;
+	   display: block;
+	   margin: 10px;
+	   background-color: #4ca74c;
+	   opacity: .3;
+   }
+   .dot_active{
+	   opacity: 1;
+	   background-color: #4ca74c;
+   }
+   .dot span{
+	   display: none;
+   }
+   .circles{
+	   width: 100%;
+	   display: flex;
+	   justify-content: center;
+   }

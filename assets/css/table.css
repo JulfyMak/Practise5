@@ -1,0 +1,21 @@
+table {
+    border: 1px solid rgb(204, 138, 15);
+    border-collapse: collapse;
+    width: 850px;
+    margin: auto;
+    height: 500px;
+    border-spacing: 10px;
+    padding: 0px;
+    }
+td {
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid rgb(204, 138, 15);
+}
+th {
+    background-color: #555;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid rgb(204, 138, 15);
+}

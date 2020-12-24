@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" >
+    <title> 3 Column Layout </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/layout.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+</head>
+<body>
+<header class= "header" >
+    <img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70">
+</header>
+<div class= "container" >
+    <main class= "center column" >
+        <article>
+            <h1> Slider </h1>
+            <p></p>
+            <div class="wrapper">
+            <button class="btn btn-prev" onclick="prevSlide()"><i class="material-icons">chevron_left</i></button>
+            <button class="btn btn-next" onclick="nextSlide()"><i class="material-icons">chevron_right</i></button>
+            <div id="mySlider"></div>
+            <div id="circles"></div>
+        </div>
+            <style>
+                    button:focus{outline: none}
+                    .wrapper{
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                    }
+                    .btn{
+                        z-index: 999;
+                        position: absolute;
+                        top: calc(50% - (50px/2));
+                        margin: 10px;
+                        border: none;
+                    }
+                    .material-icons{
+                        margin-top: 3px;
+                        font-size: 36px;
+                    }
+                    .btn-prev .material-icons{margin-left: -3px;}
+                    .btn-next .material-icons{margin-right: -3px;}
+
+                    .btn-next{right: 0;}
+
+                    .dot{
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        margin: 10px;
+                        background-color: #4ca74c;
+                        opacity: .3;
+                    }
+                    .dot_active{
+                        opacity: 1;
+                        background-color: #4ca74c;
+                    }
+                    .dot span{
+                        display: none;
+                    }
+                    #circles{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+            </style>
+        </article>
+    </main>
+    <nav class= "left column" >
+        <h3> Left heading </h3>
+        <ul>
+            <li><a href= "about.html" > About </a></li>
+            <li><a href= "media.html" > Media </a></li>
+			<li><a href= "contact.html" > Contact </a></li>
+            <li><a href= "slider.html" > Slider </a></li>
+            <li><a href= "table.html" > Table </a></li>
+        </ul>
+		<h3> Left heading </h3>
+        <ul>
+            <li><a href= "index.html" > Index </a></li>
+            <li><a href= "index.html" > Index </a></li>
+        </ul>
+    </nav>
+    <div class= "right column" >
+        <h3> Right heading </h3>
+        <p></p>
+    </div>
+</div>
+<div class= "footer-wrapper" >
+    <footer class= "footer" ><p><img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70"></p></footer>
+</div>
+<script src= "js/script.js"></script>
+</body>
+</html>

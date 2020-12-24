@@ -1,0 +1,154 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" >
+    <title> 3 Column Layout </title>
+    <link rel="stylesheet" href="assets/css/layout.css" >
+    <link rel="stylesheet" href="assets/css/contact.css" >
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class= "header" >
+    <img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70">
+</header>
+<div class= "container" >
+    <main class= "center column" >
+        <h1> Contact </h1>
+        <article>
+    
+            <form action="" id="user_details" class="formUserDetails">
+                <div class = "text">User details</div>
+                <div class="group">
+                    <input type="text" id="full_name" required>
+                    <label for="full_name">Full name<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input type="date" id="birthday" required>
+                    <label for="birthday">Your birthday<sup>&#9913</sup></label>
+                    <span class="bar"></span>   
+                </div>
+
+                <div class="group">
+                    <select name="genders" required>
+                        <option value="" selected disabled></option>
+                        <option value="">Man</option>
+                        <option value="">Woman</option>
+                    </select>
+                    <label for="">Gender</label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group__countryAndPhone">
+                    <div class="group country">
+                        <select name="countries" required>
+                            <option value="" selected disabled></option>
+                            <optgroup label="Europe">
+                                <option value="">Austria</option>
+                                <option value="">Albania</option>
+                                <option value="">Andorra</option>
+                                <option value="">Belgium</option>
+                                <option value="">Belarus</option>
+                                <option value="">Bulgaria</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="">1</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                            </optgroup>
+                        </select>
+                        <label for="">Country</label>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="group phone">
+                        <input type="text" id="phone" required>
+                        <label for="phone">Phone<sup>&#9913</sup></label>
+                        <span class="bar"></span>
+
+                        <div class="help_phone">
+                            <span>Mobile: 094 231 234</span>
+                            <span>Fixed: 2123 1234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <textarea id="bio" required></textarea>
+                    <label for="bio">Bio</label>
+                    <span class="bar"></span>
+
+                    <div class="help_bio">
+                        <span>Tell us about yourself</span>
+                        <span>151/256</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">
+                    <span>Submit</span>
+                </button>
+            </form>
+            <hr>
+
+            <form action="" id="account_details">
+                <div class="text">Accounts details</div>
+                <div class="group">
+                    <input type="text" id="username" required>
+                    <label for="username">Username<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input type="text" id="email" required>
+                    <label for="email">Email<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input type="password" id="confirm_password" required>
+                    <label for="confirm_password">Confirm password<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group checkbox__group">
+                    <input class="checkbox__input" type="checkbox" id="checkbox" required>
+                    <label class="checkbox__label" for="checkbox"></label>
+                    <label class="checkbox__label" for="checkbox">I accept terms and conditions</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            
+        </article>
+    </main>
+    <nav class= "left column" >
+		<h3> Left heading </h3>
+        <ul>
+            <li><a href= "about.html" > About </a></li>
+            <li><a href= "media.html" > Media </a></li>
+            <li><a href= "contact.html" > Contact </a></li>
+            <li><a href= "slider.html" > Slider </a></li>
+            <li><a href= "table.html" > Table </a></li>
+        </ul>
+		<h3> Left heading </h3>
+        <ul>
+            <li><a href= "index.html" > Index </a></li>
+            <li><a href= "index.html" > Index </a></li>
+        </ul>
+    </nav>
+    <div class= "right column" >
+        <h3> Right heading </h3>
+        <p></p>
+    </div>
+</div>
+<footer class= "footer" >
+    <img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70">
+</footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" >
+    <title> 3 Column Layout </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel= "stylesheet" href= "assets/css/layout.css" >
+
+    <style>
+        #draw{
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <header class= "header" >
+        <img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70">
+    </header>
+<div class= "container" >
+    <main class= "center column" >
+        <article>
+        <h1> Paint </h1>
+            <canvas id="draw" width="600" height="300"></canvas>
+            
+            <p>Цвет: <input type="color" value="#157d0b" id="myColor">
+            <label>Толщина </label>
+            <select id="select" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="20">50</option>
+                <option value="20">100</option>
+            </select> 
+            </p>
+           <button id="controlButton" onclick="canvas_clear()"><i class="fa fa-trash-o"></i></button>
+        </article>
+    </main>
+    <nav class= "left column" >
+		<h3> Left heading </h3>
+        <ul>
+            <li><a href= "about.html" > About </a></li>
+            <li><a href= "media.html" > Media </a></li>
+            <li><a href= "contact.html" > Contact </a></li>
+            <li><a href= "slider.html" > Slider </a></li>
+            <li><a href= "table.html" > Table </a></li>
+            <li><a href= "paint.html" > Paint </a></li>
+        </ul>
+		<h3> Left heading </h3>
+        <ul>
+            <li><a href= "index.html" > Link 1 </a></li>
+            <li><a href= "index.html" > Link 2 </a></li>
+        </ul>
+    </nav>
+    <div class= "right column" >
+        <h3> Right heading </h3>
+        <p></p>
+    </div>
+</div>
+<div class= "footer-wrapper" >
+    <footer class= "footer" ><p><img class="header__logo" src="assets/img/logo1.png" style="margin-left: 20px;" alt="" width = "80" height="70"></p>
+</footer>
+</div>
+<script src="js/paint.js"></script>
+</body>
+</html>
